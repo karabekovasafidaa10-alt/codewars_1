@@ -1,0 +1,5 @@
+def is_pangram(st):
+    letters = {char for char in st.lower() if 'a' <= char <= 'z'}
+    return len (letters) == 26
+print(is_pangram("The quick brown fox jumps over the lazy dog"))  # True
+print(is_pangram("Hello, world!"))  # False
